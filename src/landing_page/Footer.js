@@ -2,8 +2,8 @@ import React from "react";
 function Footer() {
   return (
     <div className="container-fluid bg-dark text-white p-5 mt-5">
-      <div className="row mt-5">
-        <div className="col">
+      <div className="row mt-5 footer-row-reverse">
+        <div className="col footer-logo-col">
           <img
             src="/Media_photos/logo.svg"
             style={{ width: "55%" }}

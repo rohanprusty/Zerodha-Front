@@ -162,9 +162,9 @@ input:not(:placeholder-shown) + label {
   padding-left: 40px;
 }
 
-/* ========================= RESPONSIVE DESIGN: PHONE & LAPTOP ONLY ============= */
+/* ========================= RESPONSIVE DESIGN: PHONE  ============= */
 
-/* ====== PHONE VIEW (≤900px) ====== */
+/* ========================= PHONE VIEW (<=900px) ========================= */
 @media (max-width: 900px) {
   /* General body and container padding */
   body, .container, .container-fluid {
@@ -231,14 +231,51 @@ input:not(:placeholder-shown) + label {
   #glow-input {
     margin-bottom: 1.5rem !important;
   }
-}
 
-/* ====== LAPTOP & DESKTOP VIEW (>900px) ====== */
-@media (min-width: 901px) {
-  /* Laptop/Desktop: Restore original navbar layout */
-  .navbar, .navbar-expand-lg, .navbar .container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  /* Footer: Move Zerodha logo above ACCOUNT and add space */
+  .footer-row-reverse {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  .footer-logo-col img {
+    margin-bottom: 1.2rem !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Prevent 'I CARE WHAT YOU THINK' input from overflowing its box */
+  .input-container {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  #glow-input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* puttting the image , name , title , mern below the image..*/
+  .about-team-img, .rounded-circle {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 1.2rem !important;
+  }
+  .about-team-name, .about-team-title {
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0.7rem !important;
+    font-size: 1.2rem !important;
+  }
+  .about-team-details {
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 1.2rem !important;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.1em;
   }
 }
 

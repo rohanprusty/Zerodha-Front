@@ -14,17 +14,17 @@ function Team() {
           <img
             src="\Media_photos\rohanpic.jpg"
             alt="Rohan Kumar Prusty"
-            className="rounded-circle"
+            className="rounded-circle about-team-img"
             style={{ width: "300px", height: "300px", marginLeft: "250px" }}
           />
           <h2
-            className="mt-3"
+            className="mt-3 about-team-name"
             style={{ fontFamily: "cursive", marginLeft: "250px" }}
           >
             Rohan Kumar Prusty
           </h2>
           <p
-            className="text-muted fs-5 mt-1 p-3"
+            className="text-muted fs-5 mt-1 p-3 about-team-details"
             style={{
               fontFamily: "fantasy",
               letterSpacing: "3px",
