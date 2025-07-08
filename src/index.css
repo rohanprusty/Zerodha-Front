@@ -162,133 +162,29 @@ input:not(:placeholder-shown) + label {
   padding-left: 40px;
 }
 
-/* ========================= RESPONSIVE DESIGN ========================= */
+/* ========================= RESPONSIVE DESIGN: PHONE & LAPTOP ONLY =========================
+   - Only two breakpoints: phone (≤900px) and laptop/desktop (>900px)
+   - All previous fixes (navbar, about/team, support, images, buttons, columns) included
+   - Simple, clear comments for future reference
+   ===================================================================== */
 
-/* Mobile devices (phones, less than 600px) */
-@media only screen and (max-width: 600px) {
-  /* General body padding and font size */
-  body {
-    padding: 5px;
-    font-size: 15px;
-  }
-  .nav-link {
-    margin-left: 10px;
-    font-size: 16px;
-  }
-  .btn {
-    margin: 20px;
-    padding: 10px 20px;
-    font-size: 15px;
-  }
-  .input-container {
-    width: 95vw;
-    min-width: 0;
-  }
-  input {
-    font-size: 15px;
-    padding: 10px 8px;
-  }
-}
-
-/* Tablets (portrait and landscape, 600px to 900px) */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  body {
-    padding: 10px;
-    font-size: 17px;
-  }
-  .nav-link {
-    margin-left: 20px;
-    font-size: 18px;
-  }
-  .btn {
-    margin: 40px;
-    padding: 12px 28px;
-    font-size: 17px;
-  }
-  .input-container {
-    width: 70vw;
-    min-width: 0;
-  }
-  input {
-    font-size: 17px;
-    padding: 12px 10px;
-  }
-}
-
-/* iPad (typical width 768px, but also covers landscape tablets) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    padding: 15px;
-    font-size: 18px;
-  }
-  .nav-link {
-    margin-left: 25px;
-    font-size: 19px;
-  }
-  .btn {
-    margin: 60px;
-    padding: 14px 32px;
-    font-size: 18px;
-  }
-  .input-container {
-    width: 60vw;
-    min-width: 0;
-  }
-  input {
-    font-size: 18px;
-    padding: 14px 12px;
-  }
-}
-
-/* Large devices (desktops, 1025px and up) */
-@media only screen and (min-width: 1025px) {
-  body {
-    padding: 20px;
-    font-size: 20px;
-  }
-  .nav-link {
-    margin-left: 40px;
-    font-size: 20px;
-  }
-  .btn {
-    margin: 100px;
-    padding: 15px 40px;
-    font-size: 20px;
-  }
-  .input-container {
-    width: 300px;
-  }
-  input {
-    font-size: 16px;
-    padding: 12px 10px;
-  }
-}
-
-/* ========================= END RESPONSIVE DESIGN ========================= */
-
-/* ========================= RESPONSIVE FIXES FOR SPECIFIC ELEMENTS ========================= */
-
-/* Make all images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Fix buttons with fixed width for mobile */
-@media (max-width: 600px) {
-  /* Remove fixed width and center buttons */
-  button,
-  .btn {
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    display: block;
-  }
-}
-
-/* Stack columns vertically on small screens */
+/* ====== PHONE VIEW (≤900px) ====== */
 @media (max-width: 900px) {
+  /* General body and container padding */
+  body, .container, .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* Navbar padding */
+  .navbar, .navbar-expand-lg, .navbar .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Stack columns vertically */
   .row {
     flex-direction: column !important;
     display: flex !important;
@@ -298,19 +194,78 @@ img {
     max-width: 100% !important;
     flex: 0 0 100% !important;
   }
-  .p-5, .mb-5 {
-    padding: 1rem !important;
-    margin-bottom: 1rem !important;
+
+  /* Responsive images */
+  img, .rounded-circle {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Buttons full width */
+  button, .btn {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
+  }
+
+  /* About/Team section: center text and image */
+  .about-team-name, .about-team-title, .about-team-details, .about-team-img {
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+
+  /* Support page: add space above Featured section */
+  #baba .col-6:last-child {
+    margin-top: 2rem !important;
   }
 }
 
-/* Fix logo and footer images for mobile */
-@media (max-width: 600px) {
-  .navbar-brand img,
-  .footer img {
-    width: 50% !important;
-    min-width: 80px;
+/* ====== LAPTOP & DESKTOP VIEW (>900px) ====== */
+@media (min-width: 901px) {
+  /* General body and container padding */
+  body, .container, .container-fluid {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Navbar padding */
+  .navbar, .navbar-expand-lg, .navbar .container-fluid {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+
+  /* Columns default (side by side) */
+  .row {
+    flex-direction: row !important;
+    display: flex !important;
+  }
+  .col-6, .col-4, .col-2, .col {
+    width: auto !important;
+    max-width: none !important;
+    flex: 1 1 0 !important;
+  }
+
+  /* Images and buttons default */
+  img, .rounded-circle {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  button, .btn {
+    width: auto;
+    display: inline-block;
+  }
+
+  /* Support page: less space above Featured section */
+  #baba .col-6:last-child {
+    margin-top: 1.5rem;
   }
 }
 
-/* ========================= END RESPONSIVE FIXES ========================= */
+/* ========================= END RESPONSIVE DESIGN ========================= */
