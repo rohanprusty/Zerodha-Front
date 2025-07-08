@@ -265,3 +265,52 @@ input:not(:placeholder-shown) + label {
 }
 
 /* ========================= END RESPONSIVE DESIGN ========================= */
+
+/* ========================= RESPONSIVE FIXES FOR SPECIFIC ELEMENTS ========================= */
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fix buttons with fixed width for mobile */
+@media (max-width: 600px) {
+  /* Remove fixed width and center buttons */
+  button,
+  .btn {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
+  }
+}
+
+/* Stack columns vertically on small screens */
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column !important;
+    display: flex !important;
+  }
+  .col-6, .col-4, .col-2, .col {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .p-5, .mb-5 {
+    padding: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+/* Fix logo and footer images for mobile */
+@media (max-width: 600px) {
+  .navbar-brand img,
+  .footer img {
+    width: 50% !important;
+    min-width: 80px;
+  }
+}
+
+/* ========================= END RESPONSIVE FIXES ========================= */
