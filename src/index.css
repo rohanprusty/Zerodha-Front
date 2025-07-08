@@ -161,3 +161,107 @@ input:not(:placeholder-shown) + label {
   color: 	rgb(255, 0, 191);
   padding-left: 40px;
 }
+
+/* ========================= RESPONSIVE DESIGN ========================= */
+
+/* Mobile devices (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+  /* General body padding and font size */
+  body {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .nav-link {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .btn {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  .input-container {
+    width: 95vw;
+    min-width: 0;
+  }
+  input {
+    font-size: 15px;
+    padding: 10px 8px;
+  }
+}
+
+/* Tablets (portrait and landscape, 600px to 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    padding: 10px;
+    font-size: 17px;
+  }
+  .nav-link {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .btn {
+    margin: 40px;
+    padding: 12px 28px;
+    font-size: 17px;
+  }
+  .input-container {
+    width: 70vw;
+    min-width: 0;
+  }
+  input {
+    font-size: 17px;
+    padding: 12px 10px;
+  }
+}
+
+/* iPad (typical width 768px, but also covers landscape tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 15px;
+    font-size: 18px;
+  }
+  .nav-link {
+    margin-left: 25px;
+    font-size: 19px;
+  }
+  .btn {
+    margin: 60px;
+    padding: 14px 32px;
+    font-size: 18px;
+  }
+  .input-container {
+    width: 60vw;
+    min-width: 0;
+  }
+  input {
+    font-size: 18px;
+    padding: 14px 12px;
+  }
+}
+
+/* Large devices (desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+  body {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .nav-link {
+    margin-left: 40px;
+    font-size: 20px;
+  }
+  .btn {
+    margin: 100px;
+    padding: 15px 40px;
+    font-size: 20px;
+  }
+  .input-container {
+    width: 300px;
+  }
+  input {
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+}
+
+/* ========================= END RESPONSIVE DESIGN ========================= */
