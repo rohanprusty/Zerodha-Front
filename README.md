@@ -29,9 +29,6 @@ Excited to unveil my latest project — a fully responsive frontend of -->The po
 
  ✅ Built purely as a frontend project (no backend yet)
 
-🔗 Live Preview: https://zerodha-front-smoky.vercel.app/
-
- 📝 Source Code: https://github.com/rohanprusty/Zerodha-Front
 
 🔥 What’s Next?
 
