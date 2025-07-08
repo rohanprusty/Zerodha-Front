@@ -162,11 +162,7 @@ input:not(:placeholder-shown) + label {
   padding-left: 40px;
 }
 
-/* ========================= RESPONSIVE DESIGN: PHONE & LAPTOP ONLY =========================
-   - Only two breakpoints: phone (≤900px) and laptop/desktop (>900px)
-   - All previous fixes (navbar, about/team, support, images, buttons, columns) included
-   - Simple, clear comments for future reference
-   ===================================================================== */
+/* ========================= RESPONSIVE DESIGN: PHONE & LAPTOP ONLY ============= */
 
 /* ====== PHONE VIEW (≤900px) ====== */
 @media (max-width: 900px) {
@@ -222,49 +218,27 @@ input:not(:placeholder-shown) + label {
   #baba .col-6:last-child {
     margin-top: 2rem !important;
   }
+
+  /* Add space below profile image and name in About/Team section */
+  .about-team-img, .rounded-circle {
+    margin-bottom: 1.2rem !important;
+  }
+  .about-team-name, .about-team-title {
+    margin-bottom: 0.8rem !important;
+  }
+
+  /* Add space below 'I CARE WHAT YOU THINK' input/button before 'Featured' */
+  #glow-input {
+    margin-bottom: 1.5rem !important;
+  }
 }
 
 /* ====== LAPTOP & DESKTOP VIEW (>900px) ====== */
 @media (min-width: 901px) {
-  /* General body and container padding */
-  body, .container, .container-fluid {
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-  }
-
-  /* Navbar padding */
+  /* Laptop/Desktop: Restore original navbar layout */
   .navbar, .navbar-expand-lg, .navbar .container-fluid {
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-  }
-
-  /* Columns default (side by side) */
-  .row {
-    flex-direction: row !important;
-    display: flex !important;
-  }
-  .col-6, .col-4, .col-2, .col {
-    width: auto !important;
-    max-width: none !important;
-    flex: 1 1 0 !important;
-  }
-
-  /* Images and buttons default */
-  img, .rounded-circle {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  button, .btn {
-    width: auto;
-    display: inline-block;
-  }
-
-  /* Support page: less space above Featured section */
-  #baba .col-6:last-child {
-    margin-top: 1.5rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 
