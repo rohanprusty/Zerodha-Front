@@ -1,6 +1,8 @@
 # Zerodha-Front-END 
 🚀 Project Launch: ZERODHA — Stock Trading Platform (Frontend Clone)
 
+🔗 Live Preview: https://lnkd.in/gUVRxF_t
+
 Excited to unveil my latest project — a fully responsive frontend of -->The popular stock trading platform "ZERODHA" , crafted with modern web technologies!
 
 🛠️ Tech Stack Used:
