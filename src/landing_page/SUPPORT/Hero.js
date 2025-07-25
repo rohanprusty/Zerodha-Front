@@ -31,9 +31,9 @@ function Hero() {
             <br />
           </p>
 
-        <div class="input-container">
-            <input type="text" required placeholder="I CARE WHAT YOU THINK " id="glow-input"></input>
-            <label for="glow-input"><i class="fa-solid fa-dragon"></i></label>
+        <div className="input-container">
+            <input type="text" required placeholder="I CARE WHAT YOU THINK " id="glow-input" className="support-input" />
+            <label htmlFor="glow-input"><i className="fa-solid fa-dragon"></i></label>
         </div>
 
 

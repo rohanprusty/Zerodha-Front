@@ -96,12 +96,13 @@ code {
 
 
 /* input text-box */
+
 .input-container {
   position: relative;
   width: 300px;
 }
 
-input {
+.support-input {
   width: 100%;
   padding: 12px 10px;
   background: transparent;
@@ -114,8 +115,8 @@ input {
   box-shadow: 0 0 8px #0ff;
 }
 
-input:focus,
-input:hover {
+.support-input:focus,
+.support-input:hover {
   animation: multicolor-glow 2s infinite linear;
   border-color: transparent;
 }
@@ -137,6 +138,7 @@ input:hover {
     box-shadow: 0 0 8px #ff00ff, 0 0 16px #ff00ff;
   }
 }
+
 
 label {
   position: absolute;
